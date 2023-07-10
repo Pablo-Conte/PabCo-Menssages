@@ -1,7 +1,8 @@
 import { User } from "@prisma/client";
 
 class UserEntity implements User {
-  readonly id: number;
+  readonly id_i: number;
+  readonly id_e: string;
   email: string;
   name: string;
   password: string;

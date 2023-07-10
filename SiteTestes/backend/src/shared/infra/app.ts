@@ -1,10 +1,12 @@
 import "reflect-metadata";
 import express, { json, urlencoded } from "express";
+import "express-async-errors";
 import cors from "cors";
 import { Server } from "socket.io";
 import { createServer } from "http";
 import { router } from "./routes";
 import "../container";
+import { errorHandler } from "../../utils/errorHandler";
 
 const app = express();
 
@@ -16,6 +18,8 @@ app.use(
 );
 
 app.use(cors(), router);
+
+app.use(errorHandler);
 
 const httpServer = createServer(app);
 

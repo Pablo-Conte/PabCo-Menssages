@@ -1,5 +1,7 @@
 import { httpServer } from "./app";
 
-httpServer.listen(3000, () => {
-    console.log("Server is listening on port 3000");
+const port = process.env.PORT || 3001;
+
+httpServer.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
 });

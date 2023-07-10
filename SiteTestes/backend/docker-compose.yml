@@ -6,7 +6,7 @@ services:
     container_name: site_test_app
     restart: always
     ports:
-      - 3000:3000
+      - 3001:3001
     links:
       - site_test_database
     depends_on:
