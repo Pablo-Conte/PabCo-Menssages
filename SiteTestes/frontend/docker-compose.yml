@@ -1,0 +1,22 @@
+services:
+  site_test_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: front_app_test
+    restart: always
+    ports:
+      - 4000:4000
+    logging:
+      options:
+        max-size: 10m
+    volumes:
+      - .:/usr/app
+
+volumes:
+  pgdatatest:
+    driver: local
+
+networks:
+  default:
+    driver: bridge
