@@ -15,9 +15,6 @@
       "@shared/*": [
         "shared/*"
       ],
-      "@errors/*": [
-        "shared/errors/*"
-      ],
       "@utils/*": [
         "utils/*"
       ],
@@ -37,7 +34,7 @@
     "forceConsistentCasingInFileNames": true,
     "strict": false,
     "strictPropertyInitialization": false,
-    "skipLibCheck": true
+    "skipLibCheck": true,
   },
   "exclude": [
     "node_modules"

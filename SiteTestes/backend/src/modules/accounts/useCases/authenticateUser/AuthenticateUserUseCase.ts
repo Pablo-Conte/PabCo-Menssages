@@ -47,7 +47,7 @@ class AuthenticateUserUseCase {
       secret_token,
       {
         subject: userExists.id_e,
-        expiresIn: "15m",
+        expiresIn: "1h",
       }
     );
 
@@ -59,6 +59,7 @@ class AuthenticateUserUseCase {
       expires_date: calculatedExpiresDate,
     });
 
+    delete userExists.password;
     const returnUser = {
       ...userExists,
     };
