@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'lexend', sans-serif;
+  background-color: #efefef;
+}
+
+header {
+  display: flex;
+  height: 100%;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  margin-left: 85%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.loginButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: row;
+  color: black;
+  width: 100px;
+  height: 100px;
+  transition: 0.5s;
+}
+
+.loginButton:hover {
+  cursor: pointer;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+
+p > .loginButton {
+  padding: 5px;
+  text-align: center;
+}
+
+.information {
+  width: 70%;
+  border-top-right-radius: 350px;
+  border-bottom-right-radius: 350px;
+  background-color: #efefef;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10%;
+}
+
+div > .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.appInformation {
+  justify-content: end;
+  display: flex;
+  flex-direction: column;
+}
+
+.appInformation h1 {
+  font-size: 53px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.appInformation h2 {
+  font-size: 28px;
+  font-weight: 750;
+  margin-top: 0;
+}
+
+.appInformation h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.devInformation {
+  justify-content: end;
+  display: flex;
+  font-size: 16px;
+  flex-direction: column;
+  margin-top: 150px;
+  display: flex;
+}
+
+.devInformation:hover {
+  .githubIcon {
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
+}
+
+.githubIcon {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+.linkToSocialMedia {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-direction: row;
+}
+
+.SentIcon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.appInformation:hover {
+  .SentIcon {
+    transition: 0.5s;
+    transform: scale(1.2);
+  }
+}
+
+.chevron {
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
